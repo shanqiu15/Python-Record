@@ -26,3 +26,6 @@ def fork_process(cmd):
     else:   # Parent
         return pid
 
+fork_process(["/usr/bin/python", "/usr/bin/glance-api"])
+fork_process(["/usr/bin/python", "/usr/bin/glance-registry"])
+
